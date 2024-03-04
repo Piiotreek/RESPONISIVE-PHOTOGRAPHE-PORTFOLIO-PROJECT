@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="nav">
+      <h1 class="nav_header">PhotoJunior</h1>
+      
+        <i class="fa-solid fa-bars" onclick="navChange()"></i>
+      
+        
+        <ul class="nav_ul">
+          <li class="nav_li">
+            <a href="#about_me_href" class="nav_href">About Me</a>
+          </li>
+          <li class="nav_li">
+            <a href="#projects_href" class="nav_href">Projects</a>
+          </li>
+          <li class="nav_li">
+            <a href="#contact_href" class="nav_href">Contact</a>
+          </li>
+        </ul>
+        
+      
+    </header>
+    <ul class="mobile_nav_ul hidden">
+        <li class="mobile_nav_li">
+            <a href="#about_me_href" class="mobile_nav_href">About Me</a>
+          </li>
+          <hr class="mobile_hr">
+          <li class="mobile_nav_li">
+            <a href="#projects_href" class="mobile_nav_href">Projects</a>
+          </li>
+          <hr class="mobile_hr">
+          <li class="mobile_nav_li">
+            <a href="#contact_href" class="mobile_nav_href">Contact</a>
+          </li>
+      </ul>  
+    <div class="header">
+      <h2>Hi! Welcome to my page</h2>
+      <p>Let's work with each other</p>
+    
+
+    <main class="content">
+      <section class="about_me" id="about_me_href">
+        <div class="description">
+          <p class="description_p">
+            Hi there! I'm YN, a passionate photographer dedicated to capturing
+            special moments and creating beautiful imagery. I specialize in
+            various areas of photography, from portraits to landscapes, always
+            aiming to capture emotions and stories behind each shot. Feel free
+            to explore my vision of the world through the lens of my camera. See
+            you through the lens!
+          </p>
+        </div>
+
+        <img id="personPhoto" src="/img/person.jpeg" alt="person" />
+      </section>
+
+      <div id="selectedPhoto_div" class="selected" onclick="disablePhoto()">
+        <img class="container_photo_1" src="/img/photo1.jpg" alt="photo_1" />
+      </div>
+
+      <section class="projects" id="projects_href">
+        <h2 class="header_projects">Here are few of my projects</h2>
+        <hr class="img_hr"/>
+        <img
+          class="photo"
+          src="/img/photo1.jpg"
+          alt="photo_1"
+          onclick="biggerPhoto('/img/photo1.jpg')"
+        />
+        <img
+          class="photo"
+          src="/img/photo2.jpg"
+          alt="photo_2"
+          onclick="biggerPhoto('/img/photo2.jpg')"
+        />
+        <img
+          class="photo"
+          src="/img/photo3.jpg"
+          alt="photo_3"
+          onclick="biggerPhoto('/img/photo3.jpg')"
+        />
+        <img
+          class="photo"
+          src="/img/photo4.jpg"
+          alt="photo_4"
+          onclick="biggerPhoto('/img/photo4.jpg')"
+        />
+        <img
+          class="photo"
+          src="/img/photo5.jpg"
+          alt="photo_5"
+          onclick="biggerPhoto('/img/photo5.jpg')"
+        />
+        <img
+          class="photo"
+          src="/img/photo6.jpg"
+          alt="photo_6"
+          onclick="biggerPhoto('/img/photo6.jpg')"
+        />
+        <img
+          class="photo"
+          src="/img/photo7.jpg"
+          alt="photo_7"
+          onclick="biggerPhoto('/img/photo7.jpg')"
+        />
+        <img
+          class="photo"
+          src="/img/photo8.jpg"
+          alt="photo_8"
+          onclick="biggerPhoto('/img/photo8.jpg')"
+        />
+      </section>
+    </main>
+    <footer class="contact" id="contact_href">
+      <div class="contact_div">
+        <ul class="contact_list">
+          <li class="contact_list_el">Piotr Poletyło &copy;</li>
+          <li class="contact_list_el">photoJunior@gmail.com</li>
+          <li class="contact_list_el">+42 297 912 221</li>
+        </ul>
+      </div>
+      <div class="social_media_div">
+        <ul class="social_media_list">
+          <li class="icon">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
+          </li>
+          <li class="icon">
+            <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li class="icon">
+            <a href="https://www.youtube.com/" target="_blank"> <i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li class="icon">
+            <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/25f9c5a41e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
